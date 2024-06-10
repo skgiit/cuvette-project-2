@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>Pocket Notes</h1>
+                <button class="button" id="createGroupBtn">+ Create Notes group</button>
+            </div>
+            <div class="sidebar-content" id="groupsContainer">
+                
+            </div>
+        </div>
+        <div class="content" id="content" style="display: none;" style="background:url("imag1.png")>
+            <div class="header" id="groupHeader">
+                <div class="group-icon" id="groupHeaderIcon"></div>
+                <h1 id="groupTitle">Select a group</h1>
+            </div>
+            <div class="note-content" id="noteContent">
+                <div class="messages" id="messagesContainer">
+                   
+
+                </div>
+                <div class="input-container">
+                    <input type="text" id="messageInput" placeholder="Enter your text here..." style="display: none;">
+                    <button id="sendMessageBtn" style="display: none;">➤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="createGroupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create New Notes group</h2>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <label for="groupNameInput">Group Name</label>
+            <input type="text" id="groupNameInput" placeholder="Enter your group name..."><br><br>
+            <label>Choose colour</label>
+            <div class="color-options">
+                <div class="color-option" data-color="#9b59b6" style="background-color: #9b59b6;"></div>
+                <div class="color-option" data-color="#e91e63" style="background-color: #e91e63;"></div>
+                <div class="color-option" data-color="#00bcd4" style="background-color: #00bcd4;"></div>
+                <div class="color-option" data-color="#3f51b5" style="background-color: #3f51b5;"></div>
+                <div class="color-option" data-color="#ff9800" style="background-color: #ff9800;"></div>
+                <div class="color-option" data-color="#8bc34a" style="background-color: #8bc34a;"></div>
+            </div><br><br>
+            <button class="button" id="createGroup">Create</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
